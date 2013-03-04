@@ -1,8 +1,18 @@
 from wheelcms_axle.templates import template_registry
 from wheelcms_spokes.page import PageType
+from wheelcms_axle.content import ImageContent
 
-def frontpage_context(node):
-    return dict(carousel=[node.get(i) for i in ('/pic-1', '/pic-2', '/pic-3')])
+def frontpage_context(handler, request, node):
+    ## limit to images, visible
+    datanode = node.child('data')
+    if datanode is None:
+        return dict(carousel=[])
+
+    return dict(carousel=[n for n in node.child('data').children()
+                          if isinstance(n.content(), ImageContent)
+                          and n.content().spoke().workflow().is_visible()
+                         ]
+               )
 
 
 template_registry.register(PageType, "wheelsite_site/page_frontpage_view.html",
