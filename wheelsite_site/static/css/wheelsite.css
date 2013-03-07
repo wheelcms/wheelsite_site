@@ -12,7 +12,8 @@
 .footer {
     background-color: rgba(0, 0, 0, 0.8);
     color: rgb(145, 145, 145);
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
+    margin-top: 50px;
 }
 
 .footer h5 {
@@ -25,3 +26,26 @@
     color: rgb(215, 215, 215);
 }
 
+.frame {
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    border-radius: 6px 6px 6px 6px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.frame-shadow {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: url("/static/img/shadow.png");
+    background-origin: padding-box;
+    background-position: -8px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
