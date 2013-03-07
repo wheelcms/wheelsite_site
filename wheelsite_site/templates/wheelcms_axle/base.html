@@ -1,5 +1,40 @@
 {% extends "wheelcms_axle/wheel_base.html" %}
 
+{% block stylesheets %}
+
+    {{block.super}}
+    <link rel="stylesheet" href="/static/css/wheelsite.css" media="screen, projection, print"/>
+{% endblock %}
+
 {% block logo %}
 <a class="brand" href="/">WheelCMS</a>
+{% endblock %}
+
+{% block base_footer %}
+<div class="span3">
+    <h5>About us</h5>
+    <p>Wheel was developed by Ivo van der Wijk / m3r consultancy B.V.</p>
+    <ul class="vcard">
+      <li>
+        <span class="vcard-icon"><i class="icon-envelope icon-white"></i></span>
+        <span class="vcard-text">wheel@in.m3r.nl</span>
+      </li>
+      <li>
+        <span class="vcard-icon"><i class="icon-home icon-white"></i></span>
+        <span class="vcard-text">http://m3r.nl</span>
+      </li>
+    </ul>
+</div>
+<div class="span3">
+    <h5>Latest Tweets</h5>
+    <p>We don't even have an account yet!</p>
+</div>
+<div class="span3">
+    <h5>Contact us</h5>
+    <p>If we had a working contact page, this is where you'd find a link ;)</p>
+</div>
+<div class="span3">
+    <h5>Contact us</h5>
+    <p>If we had a working contact page, this is where you'd find a link ;)</p>
+</div>
 {% endblock %}

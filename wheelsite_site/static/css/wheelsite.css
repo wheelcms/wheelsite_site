@@ -1,0 +1,27 @@
+.welcome {
+    padding: 50px;
+    text-align: center;  /* not needed in bootstrap 2.3 */
+}
+
+.slots .well {
+    text-align: center;
+    display: block;
+    height: 200px;
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(145, 145, 145);
+    padding: 10px 0px 10px 0px;
+}
+
+.footer h5 {
+    color: rgb(230, 230, 230);
+}
+
+.footer .vcard {
+    list-style: none;
+    margin: 0;
+    color: rgb(215, 215, 215);
+}
+
